@@ -5,3 +5,4 @@ This repository contains my custom my vimconfig. It should be cloned to `~/dotfi
 ``` cd ~/dotfiles
     chmod +x make.sh
     ./make.sh
+```
