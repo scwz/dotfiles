@@ -3,7 +3,7 @@ This repository contains my custom dotfiles. It should be cloned to `~/dotfiles/
 
 ## Installation 
 ``` bash
-git clone https://gitlab.com/pyofz/dotfiles.git 
+git clone https://gitlab.com/spicyham/dotfiles.git 
 cd ~/dotfiles
 chmod +x make.sh
 ./make.sh
