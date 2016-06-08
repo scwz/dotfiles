@@ -42,6 +42,7 @@ set softtabstop=4
 retab
 set fileformat=unix
 set background=dark
+set clipboard=unnamed
 colo luna-term 
 syntax enable
 set t_Co=256
