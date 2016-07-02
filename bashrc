@@ -1,7 +1,7 @@
 #!/bin/bash
 
+alias python='python3'
 alias la='ls -lah $LS_COLOR'
-# awesome!  CD AND LA. I never use 'cd' anymore...
 function cl(){ cd "$@" && la; }
 
 # enable colors
