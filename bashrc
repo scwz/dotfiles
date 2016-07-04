@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# aliases
 alias python='python3'
 alias la='ls -lah $LS_COLOR'
 function cl(){ cd "$@" && la; }
