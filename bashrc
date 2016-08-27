@@ -1,6 +1,5 @@
 # aliases
 #alias python='python3'
-alias gcr=`git commit -am "$(curl -s http://whatthecommit.com/index.txt)"`
 
 # enable colors
 if [ -x /usr/bin/dircolors ]; then
