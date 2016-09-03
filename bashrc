@@ -1,5 +1,5 @@
 # aliases
-#alias python='python3'
+alias python='python3'
 
 # enable colors
 if [ -x /usr/bin/dircolors ]; then
