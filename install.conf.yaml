@@ -1,0 +1,26 @@
+- defaults:
+    link:
+        relink: true
+
+- clean: ['~']
+
+- link:
+    ~/.config/i3:
+        create: true
+        force: true
+        path: config/i3
+    ~/.config/i3status:
+        create: true
+        force: true
+        path: config/i3status
+    ~/.vim:
+        force: true
+    ~/.vimrc:
+        force: true
+    ~/.bashrc:
+        force: true
+    ~/.inputrc:
+        force: true
+
+- shell:
+    - [git submodule update --init --recursive, Installing submodules]
