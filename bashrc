@@ -2,8 +2,6 @@
 alias python='python3'
 alias vi='vim'
 
-# vim keybinds
-set -o vi
 # enable colors
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
