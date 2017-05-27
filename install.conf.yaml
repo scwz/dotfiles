@@ -19,6 +19,8 @@
         force: true
     ~/.bashrc:
         force: true
+    ~/.zshrc:
+        force: true 
     ~/.inputrc:
         force: true
 
