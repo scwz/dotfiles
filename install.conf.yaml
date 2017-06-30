@@ -21,6 +21,8 @@
         force: true 
     ~/.inputrc:
         force: true
+    ~/.Xresources:
+        force: true
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
