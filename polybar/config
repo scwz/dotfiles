@@ -26,18 +26,19 @@ foreground =  ${colors.foreground}
 line-size = 4
 
 padding-left = 3
-padding-right = 10
+padding-right = 3
 
-module-margin-left = 2.5
-module-margin-right = 2.5
+module-margin-left = 1.5
+module-margin-right = 1.5
 
 font-0 = Hack:fontformat=truetype:size=9;1
 font-1 = Hack:fontformat=truetype:size=9;1
 font-2 = FontAwesome:fontformat=truetype:size=9;1
+font-3 = WunconSiji:size=10;0
 
 modules-left = i3 xwindow
 modules-center = date
-modules-right = volume battery wireless-network vpn temperature powermenu
+modules-right = volume battery wireless-network powermenu
 
 tray-position = right
 tray-padding = 5
@@ -117,27 +118,15 @@ bar-volume-empty = ─
 bar-volume-empty-font = 1
 bar-volume-empty-foreground = ${colors.colour_2}
 
-[module/temperature]
-type = internal/temperature
-thermal-zone = 0
-warn-temperature = 65
-
-format = <label>
-format-warn = <label-warn>
-
-label = %temperature%
-label-warn = %temperature%
-label-warn-foreground = ${colors.colour_3}
-
 [module/powermenu]
 type = custom/menu
 
 format-spacing = 1
 
-label-open = ⚡ Power
+label-open = 
 label-open-background = ${colors.background}
 label-open-foreground = ${colors.foreground}
-label-close = ⚡
+label-close = 
 label-close-background = ${colors.background}
 label-close-foreground = ${colors.foreground}
 label-separator = " "
@@ -147,6 +136,8 @@ menu-0-0 = Reboot
 menu-0-0-exec = shutdown -r now
 menu-0-1 = Power Off
 menu-0-1-exec = shutdown now
+menu-0-2 = Log Out
+menu-0-2-exec = logout
 
 [global/wm]
 margin-top = 5
@@ -184,28 +175,17 @@ interface = wlp3s0
 
 interval = 5.0
 accumulate-stats = true
-format-connected = Wireless: <label-connected>
+format-connected = <ramp-signal> <label-connected>
 format-connected-foreground = ${colors.colour_1}
 format-disconnected = <label-disconnected>
 
-label-connected = %essid%  %local_ip%
+ramp-signal-0 = 
+ramp-signal-1 = 
+ramp-signal-2 = 
+ramp-signal-3 = 
+
+label-connected = %essid%
 label-connected-foreground = ${colors.foreground}
 
-label-disconnected = (None)
-label-disconnected-foreground = ${colors.foreground}
-
-[module/vpn]
-type = internal/network
-interface = tun0
-
-interval = 5.0
-accumulate-stats = true
-format-connected = VPN: <label-connected>
-format-connected-foreground = ${colors.colour_1}
-format-disconnected = <label-disconnected>
-
-label-connected = Connected
-label-connected-foreground = ${colors.foreground}
-
-label-disconnected = (None)
+label-disconnected =  (None)
 label-disconnected-foreground = ${colors.foreground}
