@@ -136,8 +136,6 @@ menu-0-0 = Reboot
 menu-0-0-exec = shutdown -r now
 menu-0-1 = Power Off
 menu-0-1-exec = shutdown now
-menu-0-2 = Log Out
-menu-0-2-exec = logout
 
 [global/wm]
 margin-top = 5
