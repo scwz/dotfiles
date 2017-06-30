@@ -8,13 +8,11 @@
     ~/.config/i3:
         create: true
         force: true
-        path: config/i3
-    ~/.config/i3status:
+        path: i3
+    ~/.config/polybar:
         create: true
         force: true
-        path: config/i3status
-    ~/.vim:
-        force: true
+        path: polybar
     ~/.vimrc:
         force: true
     ~/.bashrc:
