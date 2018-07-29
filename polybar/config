@@ -26,7 +26,7 @@ foreground =  ${colors.foreground}
 line-size = 4
 
 padding-left = 3
-padding-right = 3
+padding-right = 6
 
 module-margin-left = 1.5
 module-margin-right = 1.5
@@ -37,13 +37,14 @@ font-2 = "Font Awesome 5 Free:style=Regular:size=10;2"
 
 modules-left = i3 xwindow
 modules-center = date 
-modules-right = volume battery wireless-network powermenu
+modules-right = volume battery powermenu
 
-tray-position = right
-tray-padding = 5
+tray-position = right 
+tray-padding = 2
 tray-offset-y = 0%
 tray-offset-x = 0%
 tray-maxsize = 18
+tray-scale = 1
 tray-detached = true
 tray-transparent = false
 tray-color = #1D1F21
@@ -128,23 +129,10 @@ ramp-volume-2 = 
 ;bar-volume-empty-foreground = ${colors.colour_2}
 
 [module/powermenu]
-type = custom/menu
+type = custom/text
 
-format-spacing = 1
-
-label-open = 
-label-open-background = ${colors.background}
-label-open-foreground = ${colors.foreground}
-label-close = 
-label-close-background = ${colors.background}
-label-close-foreground = ${colors.foreground}
-label-separator = " "
-label-separator-foreground = ${colors.foreground}
-
-menu-0-0 = Reboot
-menu-0-0-exec = shutdown -r now
-menu-0-1 = Power Off
-menu-0-1-exec = shutdown now
+content = 
+click-left = bash ~/dotfiles/polybar/module/power_options.sh
 
 [global/wm]
 margin-top = 5
