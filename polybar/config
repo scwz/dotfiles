@@ -31,13 +31,12 @@ padding-right = 3
 module-margin-left = 1.5
 module-margin-right = 1.5
 
-font-0 = Hack:fontformat=truetype:size=9;1
-font-1 = Hack:fontformat=truetype:size=9;1
-font-2 = FontAwesome:fontformat=truetype:size=9;1
-font-3 = WunconSiji:size=10;0
+font-0 = "Hack:fontformat=truetype:size=9;1"
+font-1 = "Font Awesome 5 Free:style=Solid:size=10;2"
+font-2 = "Font Awesome 5 Free:style=Regular:size=10;2"
 
 modules-left = i3 xwindow
-modules-center = date
+modules-center = date 
 modules-right = volume battery wireless-network powermenu
 
 tray-position = right
@@ -102,23 +101,31 @@ time = "%I:%M %p"
 time-alt = "%H:%M"
 
 [module/volume]
-type = internal/volume
+type = internal/pulseaudio
+sink = alsa_output.pci-0000_00_1b.0.analog-stereo
 
-format-muted-background = ${colors.background}
-format-volume-background = ${colors.background}
-format-volume = <label-volume> <bar-volume>
-label-muted = Muted
+format-volume = <ramp-volume> <label-volume>
+format-muted = x
 
-bar-volume-width = 15
-bar-volume-foreground = ${colors.foreground}
-bar-volume-gradient = false
-bar-volume-indicator= ~
-bar-volume-indicator-font = 1
-bar-volume-fill = ─
-bar-volume-fill-font = 1
-bar-volume-empty = ─
-bar-volume-empty-font = 1
-bar-volume-empty-foreground = ${colors.colour_2}
+ramp-volume-0 = 
+ramp-volume-1 = 
+ramp-volume-2 = 
+
+;format-muted-background = ${colors.background}
+;format-volume-background = ${colors.background}
+;format-volume = <label-volume> <bar-volume>
+;label-muted = Muted
+
+;bar-volume-width = 15
+;bar-volume-foreground = ${colors.foreground}
+;bar-volume-gradient = false
+;bar-volume-indicator= ~
+;bar-volume-indicator-font = 1
+;bar-volume-fill = ─
+;bar-volume-fill-font = 1
+;bar-volume-empty = ─
+;bar-volume-empty-font = 1
+;bar-volume-empty-foreground = ${colors.colour_2}
 
 [module/powermenu]
 type = custom/menu
@@ -153,17 +160,23 @@ poll-interval = 5
 
 time-format = %H:%M
 
-format-charging = Charging: <label-charging>
-format-discharging = Discharging: <label-discharging>
-format-full = Battery: <label-full>
+format-charging =  <label-charging>
+format-discharging = <ramp-capacity> <label-discharging>
+format-full =  <label-full>
 
-format-charging-foreground = ${colors.colour_1}
-format-discharging-foreground = ${colors.colour_1}
-format-full-foreground = ${colors.colour_1}
+ramp-capacity-0 = 
+ramp-capacity-1 = 
+ramp-capacity-2 = 
+ramp-capacity-3 = 
+ramp-capacity-4 = 
+
+format-charging-foreground = ${colors.foreground}
+format-discharging-foreground = ${colors.foreground}
+format-full-foreground = ${colors.foreground}
 
 label-charging = %percentage%%
 label-discharging = %percentage%%
-label-full = Fully charged
+label-full = %percentage%%
 
 label-charging-foreground = ${colors.foreground}
 label-discharging-foreground = ${colors.foreground}
@@ -175,17 +188,9 @@ interface = wlp3s0
 
 interval = 5.0
 accumulate-stats = true
-format-connected = <ramp-signal> <label-connected>
-format-connected-foreground = ${colors.colour_1}
-format-disconnected = <label-disconnected>
 
-ramp-signal-0 = 
-ramp-signal-1 = 
-ramp-signal-2 = 
-ramp-signal-3 = 
-
-label-connected = %essid%
+label-connected =  %essid%
 label-connected-foreground = ${colors.foreground}
 
-label-disconnected =  (None)
+label-disconnected =  (No Connection)
 label-disconnected-foreground = ${colors.foreground}

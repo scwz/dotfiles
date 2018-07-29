@@ -26,9 +26,9 @@ URxvt.transparent: true
 URxvt.shading: 20
 
 ! font
-URxvt.font: xft:inconsolata:pixelsize=14:antialias=true
-URxvt.boldFont: xft:inconsolata:pixelsize=14:antialias=true
-URxvt.letterSpace: -1
+URxvt.font: xft:Terminus:regular:pixelsize=10:antialias=true
+URxvt.boldFont: xft:Terminus:bold:pixelsize=10:antialias=true
+!URxvt.letterSpace: -1
 
 ! ------------------------------------------------------------------------------
 ! ROFI Color theme
