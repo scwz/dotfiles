@@ -64,6 +64,8 @@ set foldnestmax=99
 set foldmethod=indent
 set cindent
 set backspace=2
+imap jj <Esc>
+
 let g:lightline = {
     \ 'colorscheme': 'seoul256',
     \ }

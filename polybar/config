@@ -26,7 +26,7 @@ foreground =  ${colors.foreground}
 line-size = 4
 
 padding-left = 3
-padding-right = 6
+padding-right = 5
 
 module-margin-left = 1.5
 module-margin-right = 1.5
@@ -36,8 +36,8 @@ font-1 = "Font Awesome 5 Free:style=Solid:size=10;2"
 font-2 = "Font Awesome 5 Free:style=Regular:size=10;2"
 
 modules-left = i3 xwindow
-modules-center = date 
-modules-right = volume battery powermenu
+modules-center = powermenu date 
+modules-right = volume battery 
 
 tray-position = right 
 tray-padding = 2
@@ -132,7 +132,8 @@ ramp-volume-2 = 
 type = custom/text
 
 content = 
-click-left = bash ~/dotfiles/polybar/module/power_options.sh
+;click-left = bash ~/dotfiles/polybar/module/power_options.sh
+click-left = python ~/dotfiles/i3/i3-exit.py
 
 [global/wm]
 margin-top = 5
