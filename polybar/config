@@ -192,5 +192,5 @@ accumulate-stats = true
 label-connected =  %essid%
 label-connected-foreground = ${colors.foreground}
 
-label-disconnected =  (No Connection)
+label-disconnected =  (Disconnected)
 label-disconnected-foreground = ${colors.foreground}
