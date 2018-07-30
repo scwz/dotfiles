@@ -65,6 +65,8 @@ set foldmethod=indent
 set cindent
 set backspace=2
 imap jj <Esc>
+hi Normal ctermbg=none
+highlight NonText ctermbg=none
 
 let g:lightline = {
     \ 'colorscheme': 'seoul256',
