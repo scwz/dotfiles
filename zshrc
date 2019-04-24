@@ -85,3 +85,11 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 export VISUAL=vim
 export EDITOR="$VISUAL"
+alias python="python3"
+alias pip="pip3"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+export WORKON_HOME=$HOME/.virtualenvs
+export PROJECT_HOME=$HOME/Devel
+source /usr/local/bin/virtualenvwrapper.sh

@@ -21,12 +21,12 @@ radius = 0.0
 fixed-center = true
 
 background = ${colors.background}
-foreground =  ${colors.foreground}
+foreground = ${colors.foreground}
 
 line-size = 4
 
 padding-left = 3
-padding-right = 5
+padding-right = 8
 
 module-margin-left = 1.5
 module-margin-right = 1.5
@@ -87,7 +87,7 @@ label-maxlen = 58
 
 [module/date]
 type = internal/date
-interval = 5
+interval = 1
 
 format = <label>
 format-prefix-foreground = ${colors.foreground}

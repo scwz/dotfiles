@@ -188,8 +188,8 @@ bindsym $mod+Control+s exec ~/.config/i3/i3-exit.py suspend
 bindsym $mod+Control+l exec ~/.config/i3/i3-exit.py lock
 
 # Pulse Audio controls
-bindsym XF86AudioRaiseVolume exec amixer -D pulse set Master 1%+ unmute
-bindsym XF86AudioLowerVolume exec amixer -D pulse set Master 1%- unmute
+bindsym XF86AudioRaiseVolume exec amixer -D pulse set Master 2%+ unmute
+bindsym XF86AudioLowerVolume exec amixer -D pulse set Master 2%- unmute
 bindsym XF86AudioMute exec amixer -D pulse set Master toggle
 
 # Sreen brightness controls
