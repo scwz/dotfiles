@@ -66,6 +66,7 @@ set foldnestmax=99
 set foldmethod=indent
 set cindent
 set backspace=2
+set spell
 imap jj <Esc>
 hi Normal ctermbg=none
 highlight NonText ctermbg=none
