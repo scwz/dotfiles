@@ -60,16 +60,14 @@ set number
 set cursorline
 set showmatch
 set incsearch
-set foldenable
-set foldlevelstart=99
-set foldnestmax=99
-set foldmethod=indent
 set cindent
 set backspace=2
 set spell
 imap jj <Esc>
 hi Normal ctermbg=none
 highlight NonText ctermbg=none
+au BufRead,BufNewFile *.tpp set filetype=cpp
+
 
 let g:lightline = {
     \ 'colorscheme': 'seoul256',
