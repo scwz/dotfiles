@@ -180,12 +180,13 @@ exec_always --no-startup-id feh --bg-scale ~/Pictures/art-astronomy-atmosphere-2
 exec_always --no-startup-id compton -bc
 
 # system functions menu (suspend, logout, shutdown, restart)
-bindsym $mod+Control+Delete exec ~/.config/i3/i3-exit.py
-for_window [class="I3-exit" instance="i3-exit"] floating enable 
+#bindsym $mod+Control+Delete exec ~/.config/i3/i3-exit.py
+#for_window [class="I3-exit" instance="i3-exit"] floating enable 
+for_window [class="I3-exit-qt" instance="i3-exit-qt"] floating enable 
 # shortcut to suspend
-bindsym $mod+Control+s exec ~/.config/i3/i3-exit.py suspend
+#bindsym $mod+Control+s exec ~/.config/i3/i3-exit.py suspend
 # shortcut to lock
-bindsym $mod+Control+l exec ~/.config/i3/i3-exit.py lock
+#bindsym $mod+Control+l exec ~/.config/i3/i3-exit.py lock
 
 # Pulse Audio controls
 bindsym XF86AudioRaiseVolume exec amixer -D pulse set Master 2%+ unmute

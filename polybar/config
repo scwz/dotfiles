@@ -133,7 +133,7 @@ type = custom/text
 
 content = 
 ;click-left = bash ~/dotfiles/polybar/module/power_options.sh
-click-left = python ~/dotfiles/i3/i3-exit.py
+click-left = python ~/dotfiles/i3/i3-exit-qt.py
 
 [global/wm]
 margin-top = 5

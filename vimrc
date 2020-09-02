@@ -26,6 +26,8 @@ Plugin 'dracula/vim'
 Plugin 'morhetz/gruvbox'
 Plugin 'junegunn/seoul256.vim'
 Plugin 'junegunn/fzf.vim'
+Plugin 'leafgarland/typescript-vim'
+Plugin 'peitalin/vim-jsx-typescript'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -62,7 +64,6 @@ set showmatch
 set incsearch
 set cindent
 set backspace=2
-set spell
 imap jj <Esc>
 hi Normal ctermbg=none
 highlight NonText ctermbg=none
@@ -77,3 +78,6 @@ let g:lightline = {
 "autocmd vimenter * NERDTree
 "autocmd StdinReadPre * let s:std_in=1
 "autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+
+"disable scratch appearing from autocomplete
+set completeopt-=preview
