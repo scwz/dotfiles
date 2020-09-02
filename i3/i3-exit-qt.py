@@ -4,13 +4,7 @@ import os
 import sys
 import getpass
 from PyQt5.QtCore import Qt
-from PyQt5.QtWidgets import QApplication, QWidget, QHBoxLayout, QPushButton, QMessageBox, QVBoxLayout, QLabel
-
-def send_alert(msg):
-    alert = QMessageBox()
-    alert.setText(msg)
-    alert.exec_()
-
+from PyQt5.QtWidgets import QApplication, QWidget, QHBoxLayout, QPushButton, QVBoxLayout, QLabel
 
 def lock():
     os.system("i3lock -c 2f343f")
