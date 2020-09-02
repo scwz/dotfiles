@@ -45,10 +45,9 @@ class i3_exit(QWidget):
 
     def logout_action(self):
         self.disable_buttons()
-        send_alert("logging out")
         self.status.setText("Exiting i3, please standby...")
 
-        #os.system("i3-msg exit")
+        os.system("i3-msg exit")
 
     def suspend_action(self):
         self.disable_buttons()
